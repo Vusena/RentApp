@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home_text" />
+    <item
+        android:id="@+id/housesFragment"
+        android:icon="@drawable/ic_store"
+        android:title="@string/properties_text" />
+    <item
+        android:id="@+id/transactionsFragment"
+        android:icon="@drawable/ic_credit_card"
+        android:title="@string/transactions_text" />
+</menu>

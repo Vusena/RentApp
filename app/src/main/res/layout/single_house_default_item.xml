@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/house_iv"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:background="?colorPrimary"
+        android:contentDescription="@string/houses_apartment_text"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_toStartOf="@id/booking_btn"
+        android:layout_toEndOf="@id/house_iv"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/house_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="@string/name_hint"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+
+        <TextView
+            android:id="@+id/house_cost_per_room_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="@string/cost_per_room_tv"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/booking_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:text="@string/book_text" />
+
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/default_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.mysasse.rentapp.ui.fragments.HomeFragment"
+        android:label="@string/home_text"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_myHousesFragment"
+            app:destination="@id/myHousesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_requestsFragment"
+            app:destination="@id/requestsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/housesFragment"
+        android:name="com.mysasse.rentapp.ui.fragments.HousesFragment"
+        android:label="@string/houses_apartment_text"
+        tools:layout="@layout/houses_fragment" />
+    <fragment
+        android:id="@+id/transactionsFragment"
+        android:name="com.mysasse.rentapp.ui.fragments.TransactionsFragment"
+        android:label="@string/transactions_text"
+        tools:layout="@layout/fragment_transactions" />
+    <fragment
+        android:id="@+id/myHousesFragment"
+        android:name="com.mysasse.rentapp.ui.fragments.MyHousesFragment"
+        android:label="@string/my_houses_text"
+        tools:layout="@layout/fragment_my_houses" />
+    <fragment
+        android:id="@+id/requestsFragment"
+        android:name="com.mysasse.rentapp.ui.fragments.RequestsFragment"
+        android:label="@string/requests_text"
+        tools:layout="@layout/fragment_requests" />
+</navigation>

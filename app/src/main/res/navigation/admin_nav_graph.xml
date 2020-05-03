@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/admin_nav_graph"
+    app:startDestination="@id/adminHomeFragment">
+
+    <fragment
+        android:id="@+id/adminHomeFragment"
+        android:name="com.mysasse.rentapp.ui.fragments.admin.AdminHomeFragment"
+        android:label="@string/home_text"
+        tools:layout="@layout/fragment_admin_home" />
+    <fragment
+        android:id="@+id/propertiesFragment"
+        android:name="com.mysasse.rentapp.ui.fragments.admin.properties.PropertiesFragment"
+        android:label="@string/properties_text"
+        tools:layout="@layout/properties_fragment">
+        <action
+            android:id="@+id/action_propertiesFragment_to_addHouseFragment"
+            app:destination="@id/addHouseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/usersFragment"
+        android:name="com.mysasse.rentapp.ui.fragments.admin.users.UsersFragment"
+        android:label="@string/users_text"
+        tools:layout="@layout/users_fragment">
+        <action
+            android:id="@+id/action_usersFragment_to_userFragment"
+            app:destination="@id/userFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.mysasse.rentapp.ui.fragments.ProfileFragment"
+        android:label="@string/profile_text"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/addHouseFragment"
+        android:name="com.mysasse.rentapp.ui.fragments.admin.properties.AddHouseFragment"
+        android:label="@string/add_house_text"
+        tools:layout="@layout/fragment_add_house" />
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.mysasse.rentapp.ui.fragments.admin.users.UserFragment"
+        android:label="@string/user_text"
+        tools:layout="@layout/fragment_user" />
+</navigation>
